@@ -1,0 +1,30 @@
+// @use "@carbon/react/scss/spacing" as *;
+// @use "@carbon/react/scss/breakpoint" as *;
+// @use "@carbon/react/scss/themes" as *;
+// @use "@carbon/react/scss/theme" as * with($theme: $g90);
+// @use "@carbon/type";
+@use "styles/variables" as *;
+
+.wrapper {
+  background: $support-info;
+}
+
+.grid {
+  max-width: 1152px;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.column {
+  padding: 1rem;
+}
+
+.left {
+  @include type-style("heading-04");
+  font-weight: bold;
+}
+
+.right {
+  @include type-style("heading-04");
+  font-weight: 300;
+}

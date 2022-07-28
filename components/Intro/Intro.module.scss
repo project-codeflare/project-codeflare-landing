@@ -1,0 +1,14 @@
+@use "styles/variables" as *;
+
+.con {
+  background: $background;
+}
+.wrapper * {
+  @include type-style("heading-04");
+  margin-bottom: 1em;
+  font-weight: 300;
+}
+
+.wrapper {
+  padding-bottom: 2em;
+}

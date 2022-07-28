@@ -1,9 +1,10 @@
 @forward "@carbon/react/scss/spacing";
 @forward "@carbon/react/scss/breakpoint";
+@forward "@carbon/react/scss/colors";
 @use "@carbon/react/scss/themes" as *;
 
 @forward "@carbon/react/scss/theme" with (
-  $theme: $g90
+  $theme: $g100
 );
 
 @forward "@carbon/type";

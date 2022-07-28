@@ -6,7 +6,6 @@
 @use "styles/variables" as *;
 
 .wrapper {
-  background: $support-info;
 }
 
 .grid {
@@ -27,4 +26,11 @@
 .right {
   @include type-style("heading-04");
   font-weight: 300;
+}
+
+.right a {
+  display: block;
+  margin-top: 2rem;
+  text-decoration: underline;
+  @include type-style("heading-03");
 }

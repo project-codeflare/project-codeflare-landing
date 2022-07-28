@@ -10,6 +10,7 @@
   width: 100%;
   height: 45vh; /* if you don't want it to take up the full screen, reduce this number */
   overflow: hidden;
+  isolation: isolate;
 }
 
 .image {
@@ -38,18 +39,66 @@
   );
 }
 
-.card {
-  position: relative;
+.grid {
+  display: grid;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.title {
+  @include type-style("heading-05");
+  padding: 2rem;
   background: $background;
-  padding: 1rem;
+  text-align: left;
+  grid-column-start: 2;
+  grid-column-end: 7;
+}
+
+.cta {
+  background: $background;
+  grid-column-start: 7;
+  grid-column-end: 16;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  aspect-ratio: 1 / 1;
-  transition: background 0.2s ease;
+}
 
+.pitch {
+  @include type-style("heading-04");
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  height: 50%;
+  display: block;
+}
+
+.actions {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.action {
+  border: none;
+  color: currentColor;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+  background: $layer-01;
   &:hover {
     background: $layer-hover-01;
+    cursor: pointer;
+  }
+}
+
+.primary {
+  background: $blue-60;
+  &:hover {
+    background: $blue-50;
   }
 }
 
@@ -60,8 +109,8 @@
 }
 
 .label {
-  @include type-style("heading-01");
-  font-weight: 300;
+  @include type-style("body-long-01");
+  margin-bottom: 3rem;
 }
 
 .heading {

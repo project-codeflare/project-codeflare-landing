@@ -1,0 +1,10 @@
+.grid {
+  max-width: 1152px;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.column {
+  padding: 1rem;
+  --cds-grid-gutter: 0;
+}

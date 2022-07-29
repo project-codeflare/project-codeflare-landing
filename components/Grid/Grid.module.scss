@@ -1,10 +1,11 @@
+@use "styles/variables" as *;
 .grid {
   max-width: 1152px;
-  margin: 0;
-  padding: 2rem 0;
-}
-
-.column {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  text-align: left;
   padding: 1rem;
-  --cds-grid-gutter: 0;
+  background: $background;
 }

@@ -5,6 +5,7 @@ import Hero from "components/Hero";
 import Callout from "components/Callout";
 import Intro from "components/Intro";
 import Lightbox from "components/Lightbox";
+import TwoColumn from "components/TwoColumn";
 
 import heroImage from "media/hero.webp";
 import videoPoster from "media/poster.jpg";
@@ -31,22 +32,7 @@ const Home: NextPage = () => {
           <source src={videoSrc} type="video/mp4" />
         </video>
       </Lightbox>
-      <Intro>
-        <p>
-          Seamlessly set up, run, and scale your AI and ML workflows, then
-          deploy anywhere using the power of Red Hat OpenShift.
-        </p>
-        <span>↓</span>
-      </Intro>
-      <Callout
-        style={{ background: "#0043ce" }}
-        heading="CodeFlare ++ OpenShift"
-      >
-        Leveraging Red Hat OpenShift platform you can run your data science
-        workloads anywhere
-        <br />
-        <a href="research.ibm.com">Request a demo →</a>
-      </Callout>
+      <TwoColumn />
       <Callout heading="Case study">
         A major semi-conductor manufacterer applied the framework to analyze and
         optimize approximately <strong>100,000 pipelines</strong> for training

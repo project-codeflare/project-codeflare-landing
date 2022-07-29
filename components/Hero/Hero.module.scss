@@ -39,42 +39,38 @@
   );
 }
 
-.grid {
-  display: grid;
-  text-align: left;
-  height: 100%;
-  width: 100%;
+.grid.grid {
   z-index: 1;
-  grid-template-columns: repeat(16, 1fr);
+  padding-bottom: 0;
+  padding-right: 0;
 }
 
 .title {
   @include type-style("heading-05");
-  padding: 2rem;
+  padding: 1rem;
   background: $background;
   text-align: left;
-  grid-column-start: 2;
+  grid-column-start: 1;
   grid-column-end: 7;
 }
 
 .cta {
   background: $background;
   grid-column-start: 7;
-  grid-column-end: 16;
+  grid-column-end: 17;
   display: flex;
   flex-direction: column;
 }
 
 .pitch {
   @include type-style("heading-04");
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
   height: 50%;
   display: block;
 }
 
 .actions {
-  height: 50%;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -88,6 +84,7 @@
   flex-direction: column;
   padding: 1rem;
   width: 50%;
+  height: 100%;
   background: $layer-01;
   &:hover {
     background: $layer-hover-01;

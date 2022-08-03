@@ -48,6 +48,7 @@
 
 .title {
   @include type-style("heading-05");
+  font-weight: 300;
   padding: 1rem;
   background: $background;
   text-align: left;

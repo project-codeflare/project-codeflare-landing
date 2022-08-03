@@ -7,7 +7,7 @@
   align-items: flex-start;
   flex-direction: column;
   text-align: center;
-  width: 100vw;
+  width: calc(100vw - 1rem);
   height: 50vh;
   overflow: hidden;
   isolation: isolate;

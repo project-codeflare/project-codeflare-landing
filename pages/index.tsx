@@ -71,37 +71,33 @@ const Home: NextPage = () => {
           CodeFlare drastically reduces time to set up, run, and scale
           machine-learning tests
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-for-foundation-models">
+          IBM’s CodeFlare significantly cuts the time to automate transfer
+          learning tasks for foundation models
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://research.ibm.com/blog/what-are-foundation-models">
+          What are foundation models?
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://medium.com/codeflare/aix360-meets-codeflare-how-to-scale-explainability-using-codeflare-pipelines-c6bd8a7b0090">
+          AIX360 meets CodeFlare: How to scale explainability using CodeFlare
+          pipelines
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://medium.com/codeflare/tuning-hyper-parameters-with-codeflare-pipelines-13b884c8336f">
+          Tuning hyper-parameters with CodeFlare Pipelines
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://medium.com/codeflare/fit-and-score-multiple-classifiers-with-codeflare-pipeline-6e58fa5b2c52">
+          Fit and score multiple classifiers with CodeFlare Pipeline
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://www.youtube.com/watch?v=L7ZmnFV8fzc&feature=emb_title">
+          Ray Summit 2021 — Scaling and Unifying SciKit Learn and Spark
+          Pipelines using Ray
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://www.youtube.com/watch?v=nox9R0dK0E8&feature=emb_title">
+          Ray Summit 2021 — Anomaly Detection on Remote Sensing with Ray +
+          Horovod
         </LearnMoreCard>
-        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+        <LearnMoreCard href="https://www.youtube.com/watch?v=0SRk5lfaYYE">
+          Ray Summit 2021 — Powering open data hub with Ray
         </LearnMoreCard>
       </LearnMore>
       <Callout background="#393939" leftText="Try CodeFlare">
@@ -110,8 +106,8 @@ const Home: NextPage = () => {
         </CalloutHeading>
         <CalloutBody>
           If you are selected, you receive access to our researcher expertise,
-          access to hosted CodeFlare with limited free GPU time, and several
-          working use cases.
+          access to hosted CodeFlare with free GPU time, and several examples to
+          get you started.
           <br />
           <a href="research.ibm.com">Sign up →</a>
         </CalloutBody>

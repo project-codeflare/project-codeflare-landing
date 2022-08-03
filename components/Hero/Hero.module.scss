@@ -123,6 +123,7 @@
   .container {
     padding-top: 200px;
     height: auto;
+    width: 100vw;
   }
 
   .pitch {
@@ -143,6 +144,6 @@
     flex-direction: column;
   }
   .action {
-    width: calc(100% - 1rem);
+    width: 100vw;
   }
 }

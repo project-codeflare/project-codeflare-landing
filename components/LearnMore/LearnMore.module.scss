@@ -43,7 +43,7 @@
 @include breakpoint-down("md") {
   .grid {
     grid-column-end: 16;
-    width: calc(100vw - 1rem);
+    width: 100vw;
     grid-template-columns: 1fr;
     padding-left: 1rem;
     padding-right: 1rem;

@@ -4,21 +4,16 @@ import Head from "next/head";
 import { Innovate, Teammates, Path } from "@carbon/pictograms-react";
 
 import Hero from "components/Hero";
-import Callout from "components/Callout";
-import Intro from "components/Intro";
+import Callout, { CalloutBody, CalloutHeading } from "components/Callout";
 import Lightbox from "components/Lightbox";
-import {
-  TwoColumn,
-  TwoColumnFeature,
-  TwoColumnPictogram,
-} from "components/TwoColumn";
+import { TwoColumn, TwoColumnFeature } from "components/TwoColumn";
+import LearnMore, { LearnMoreCard } from "components/LearnMore";
 
 import heroImage from "media/hero.webp";
 import videoPoster from "media/poster.jpg";
 import videoSrc from "media/codeflare.mp4";
 
-import dashSrc from "media/dashboard.jpg";
-import terminalSrc from "media/terminal.jpg";
+import bundled from "media/bundled.png";
 
 const Home: NextPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -42,7 +37,7 @@ const Home: NextPage = () => {
         </video>
       </Lightbox>
       <TwoColumn
-        imageSrc={dashSrc}
+        imageSrc={bundled}
         imageAlt="CodeFlare dashboard screenshot"
         heading="Empower your AI and ML teams to innovate where it matters. We‘ll
     handle the rest."
@@ -58,35 +53,71 @@ const Home: NextPage = () => {
           Run your workloads anywhere.
         </TwoColumnFeature>
       </TwoColumn>
-      <TwoColumn
-        imageSrc={terminalSrc}
-        imageAlt="CodeFlare terminal screenshot"
-        heading="Empower your AI and ML teams to innovate where it matters. We‘ll
-    handle the rest."
-      >
-        <TwoColumnFeature icon={Path}>
-          Minimize the effort and skills needed to scale your AI and ML
-        </TwoColumnFeature>
-        <TwoColumnFeature icon={Innovate}>
-          Access the latest innovations and experience in running data science
-          platforms
-        </TwoColumnFeature>
-        <TwoColumnFeature icon={Teammates}>
-          Run your workloads anywhere.
-        </TwoColumnFeature>
-      </TwoColumn>
+      <Callout leftText="Use case">
+        <CalloutHeading>
+          IBM’s CodeFlare significantly cuts the time to automate transfer
+          learning tasks for foundation models.
+        </CalloutHeading>
+        <CalloutBody>
+          With just a few lines of code, a data scientist can operationalize
+          hundreds of model adaptation pipelines and automate these tasks
+          whenever they need to make any changes.
+          <br />
+          <a href="research.ibm.com">Request a demo →</a>
+        </CalloutBody>
+      </Callout>
+      <LearnMore>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+        <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
+          CodeFlare drastically reduces time to set up, run, and scale
+          machine-learning tests
+        </LearnMoreCard>
+      </LearnMore>
+      <Callout leftText="Try CodeFlare">
+        <CalloutHeading>
+          Sign up to be considered for our beta trial.
+        </CalloutHeading>
+        <CalloutBody>
+          If you are selected, you receive access to our researcher expertise,
+          access to hosted CodeFlare with limited free GPU time, and several
+          working use cases.
+          <br />
+          <a href="research.ibm.com">Sign up →</a>
+        </CalloutBody>
+      </Callout>
     </div>
   );
 };
 
-{
-  /* <Callout heading="Case study">
-  A major semi-conductor manufacterer applied the framework to analyze and
-  optimize approximately <strong>100,000 pipelines</strong> for training
-  machine learning models. CodeFlare cut the time it took to execute each
-  pipeline from 4 hours to 15 minutes.
-  <br />
-  <a href="research.ibm.com">Request a demo →</a>
-</Callout> */
-}
 export default Home;

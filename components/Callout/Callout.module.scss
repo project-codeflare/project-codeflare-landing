@@ -6,29 +6,34 @@
 @use "styles/variables" as *;
 
 .wrapper {
+  padding: 6rem 0;
+  background: red;
 }
 
-.grid {
-  max-width: 1152px;
-  margin: 0;
-  padding: 2rem 0;
-}
-
-.column {
-  padding: 1rem;
+.wrapper > div {
+  background: red;
 }
 
 .left {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+.right {
+  grid-column-start: 7;
+  grid-column-end: -1;
+}
+.heading {
   @include type-style("heading-04");
   font-weight: bold;
 }
 
-.right {
+.body {
   @include type-style("heading-04");
+  margin-top: 1em;
   font-weight: 300;
 }
 
-.right a {
+.body a {
   display: block;
   margin-top: 2rem;
   text-decoration: underline;

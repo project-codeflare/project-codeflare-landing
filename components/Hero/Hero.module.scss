@@ -89,6 +89,8 @@
   width: 50%;
   height: 100%;
   background: $layer-01;
+  transition: background 0.2s ease;
+
   &:hover {
     background: $layer-hover-01;
     cursor: pointer;

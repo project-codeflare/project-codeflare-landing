@@ -7,14 +7,15 @@
   align-items: flex-start;
   flex-direction: column;
   text-align: center;
-  width: 100%;
-  height: 45vh; /* if you don't want it to take up the full screen, reduce this number */
+  width: 100vw;
+  height: 50vh;
   overflow: hidden;
   isolation: isolate;
 }
 
 .image {
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -67,6 +68,7 @@
   padding: 1rem;
   margin-bottom: 3rem;
   height: 50%;
+  padding-right: 3rem;
   display: block;
 }
 
@@ -114,8 +116,30 @@
   @include type-style("heading-03");
 }
 
-@include breakpoint("md") {
-  .card {
-    aspect-ratio: 2 / 1;
+@include breakpoint-down("md") {
+  .container {
+    padding-top: 200px;
+    height: auto;
+  }
+
+  .pitch {
+    padding-right: 2rem;
+  }
+
+  .grid.grid {
+    padding: 0;
+  }
+
+  .cta {
+    @include type-style("heading-03");
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+  .actions {
+    flex-direction: column;
+  }
+  .action {
+    width: calc(100% - 1rem);
   }
 }

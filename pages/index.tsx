@@ -18,7 +18,7 @@ import bundled from "media/bundled.png";
 const Home: NextPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   return (
-    <div>
+    <>
       <Head>
         <title>CodeFlare</title>
         <meta name="description" content="CodeFlare by IBM Research" />
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
           <a href="research.ibm.com">Sign up →</a>
         </CalloutBody>
       </Callout>
-    </div>
+    </>
   );
 };
 

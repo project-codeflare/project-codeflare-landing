@@ -24,12 +24,13 @@ const Hero = ({
         />
       </div>
       <Grid className={styles.grid}>
-        <div className={styles.title}>CodeFlare</div>
+        <div className={styles.title}>
+          Code<span style={{ fontWeight: "bold" }}>Flare</span>
+        </div>
         <div className={styles.cta}>
           <p className={styles.pitch}>
-            Seamlessly set up, run, and scale your AI
-            <br />
-            and ML from your laptop to the cloud.
+            Seamlessly set up, run, and scale your AI and ML from your laptop to
+            the cloud.
           </p>
           <div className={styles.actions}>
             <button
@@ -42,7 +43,7 @@ const Hero = ({
             </button>
             <a className={cx(styles.action, styles.primary)}>
               <span className={styles.heading}>Try Codeflare</span>
-              <span className={styles.label}>Sign of for the beta</span>
+              <span className={styles.label}>Sign up for the beta</span>
               <ArrowRight width="24" height="24" className={styles.arrow} />
             </a>
           </div>

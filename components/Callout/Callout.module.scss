@@ -39,3 +39,28 @@
   text-decoration: underline;
   @include type-style("heading-03");
 }
+
+@include breakpoint-down("md") {
+  .wrapper {
+    padding: 3rem 0;
+  }
+
+  .left,
+  .right {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .heading {
+    @include type-style("heading-03");
+  }
+
+  .body,
+  .body a {
+    @include type-style("body-02");
+  }
+
+  .right {
+    margin-top: 2rem;
+  }
+}

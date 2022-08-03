@@ -54,3 +54,15 @@
   height: 100%;
   fill: $icon-secondary;
 }
+@include breakpoint-down("md") {
+  .left,
+  .right,
+  .heading {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .right {
+    margin-top: 3rem;
+  }
+}

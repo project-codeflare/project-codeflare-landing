@@ -34,3 +34,13 @@
   bottom: 1rem;
   right: 1rem;
 }
+
+@include breakpoint-down("md") {
+  .grid {
+    grid-column-end: 16;
+    width: calc(100vw - 1rem);
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

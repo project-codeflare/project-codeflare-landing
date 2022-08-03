@@ -37,8 +37,8 @@ export const TwoColumn = ({
 }: twoColumnProps) => {
   return (
     <Grid className={styles.wrapper}>
+      <p className={styles.heading}>{heading}</p>
       <div className={styles.left}>
-        <p className={styles.heading}>{heading}</p>
         <ul className={styles.list}>{children}</ul>
       </div>
       <div className={styles.right}>

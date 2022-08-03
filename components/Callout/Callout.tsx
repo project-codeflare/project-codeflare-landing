@@ -5,13 +5,18 @@ import styles from "./Callout.module.scss";
 type Props = {
   leftText: string;
   children: ReactNode;
-  style?: any;
+  background?: string;
 };
 
-const Callout = ({ leftText, children, ...rest }: Props) => {
+const Callout = ({
+  leftText,
+  children,
+  background = "#002d9c",
+  ...rest
+}: Props) => {
   return (
-    <div className={styles.wrapper} {...rest}>
-      <Grid>
+    <div style={{ background }} className={styles.wrapper} {...rest}>
+      <Grid style={{ background }}>
         <div className={styles.left}>
           <span className={styles.heading}>{leftText}</span>
         </div>

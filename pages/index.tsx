@@ -104,7 +104,7 @@ const Home: NextPage = () => {
           machine-learning tests
         </LearnMoreCard>
       </LearnMore>
-      <Callout leftText="Try CodeFlare">
+      <Callout background="#393939" leftText="Try CodeFlare">
         <CalloutHeading>
           Sign up to be considered for our beta trial.
         </CalloutHeading>

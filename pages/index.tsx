@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>IBM Research | CodeFlare</title>
+        <title>CodeFlare | IBM Research</title>
         <meta name="description" content="CodeFlare by IBM Research" />
         <meta
           name="description"

@@ -6,5 +6,6 @@
 # Deploy
 
 1. Run `npm run build`
-2. Commit the changes
-3. Push to the `main` branch
+1. Run `npm run export`
+1. Commit the changes
+1. Push to the `main` branch

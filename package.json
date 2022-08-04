@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o docs",
-    "start": "next start",
-    "lint": "next lint"
+    "export": "next export",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.6.0",

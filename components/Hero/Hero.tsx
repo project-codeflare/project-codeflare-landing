@@ -37,13 +37,12 @@ const Hero = ({
               onClick={() => setLightboxOpen(true)}
               className={styles.action}
             >
-              <span className={styles.heading}>Watch demo</span>
-              <span className={styles.label}>Learn more</span>
+              <span className={styles.heading}>Watch the demo</span>
               <Video width="24" height="24" className={styles.arrow} />
             </button>
             <a className={cx(styles.action, styles.primary)}>
               <span className={styles.heading}>Try Codeflare</span>
-              <span className={styles.label}>Sign up for the beta</span>
+
               <ArrowRight width="24" height="24" className={styles.arrow} />
             </a>
           </div>

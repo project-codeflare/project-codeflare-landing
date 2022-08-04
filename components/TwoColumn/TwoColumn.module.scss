@@ -2,20 +2,27 @@
 
 .wrapper {
   margin: 6rem auto;
+  place-content: center;
 }
 
 .left {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
   grid-column-start: 1;
-  grid-column-end: 8;
+  grid-column-end: 9;
+  padding: 1rem;
 }
 
 .right {
-  grid-column-start: 9;
+  grid-column-start: 10;
   grid-column-end: 17;
+  padding: 1rem;
 }
 
 .image {
   object-fit: cover;
+  height: 100%;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -34,6 +41,7 @@
   display: flex;
   margin-bottom: 2rem;
   align-items: center;
+  color: $icon-secondary;
 }
 
 .listItem p {
@@ -54,15 +62,16 @@
   height: 100%;
   fill: $icon-secondary;
 }
+
 @include breakpoint-down("md") {
+  .wrapper {
+    margin-top: 3rem;
+  }
   .left,
   .right,
   .heading {
     grid-column-start: 1;
     grid-column-end: -1;
-  }
-
-  .right {
-    margin-top: 3rem;
+    width: 100%;
   }
 }

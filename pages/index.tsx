@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useState } from "react";
 import Head from "next/head";
-import { Innovate, Teammates, Path } from "@carbon/pictograms-react";
+import { Innovate, Spaceship, Streamline } from "@carbon/pictograms-react";
 
 import Hero from "components/Hero";
 import Callout, { CalloutBody, CalloutHeading } from "components/Callout";
@@ -9,11 +9,11 @@ import Lightbox from "components/Lightbox";
 import { TwoColumn, TwoColumnFeature } from "components/TwoColumn";
 import LearnMore, { LearnMoreCard } from "components/LearnMore";
 
-import heroImage from "media/hero.webp";
+import heroImage from "media/hero.png";
 import videoPoster from "media/poster.jpg";
 import videoSrc from "media/codeflare.mp4";
 
-import bundled from "media/bundled.png";
+import screenshots from "media/screenshots.png";
 
 const Home: NextPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -37,19 +37,19 @@ const Home: NextPage = () => {
         </video>
       </Lightbox>
       <TwoColumn
-        imageSrc={bundled}
+        imageSrc={screenshots}
         imageAlt="CodeFlare dashboard screenshot"
         heading="Empower your AI and ML teams to innovate where it matters. We‘ll
     handle the rest."
       >
-        <TwoColumnFeature icon={Path}>
+        <TwoColumnFeature icon={Streamline}>
           Minimize the effort and skills needed to scale your AI and ML
         </TwoColumnFeature>
         <TwoColumnFeature icon={Innovate}>
           Access the latest innovations and experience in running data science
           platforms
         </TwoColumnFeature>
-        <TwoColumnFeature icon={Teammates}>
+        <TwoColumnFeature icon={Spaceship}>
           Run your workloads anywhere.
         </TwoColumnFeature>
       </TwoColumn>

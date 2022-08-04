@@ -9,3 +9,9 @@
   padding: 1rem;
   background: $background;
 }
+
+@include breakpoint-down("md") {
+  .grid {
+    padding: 0;
+  }
+}

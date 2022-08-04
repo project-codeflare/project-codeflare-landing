@@ -6,15 +6,11 @@
 @use "styles/variables" as *;
 
 .wrapper {
-  padding: 6rem 0;
-  background: red;
-}
-
-.wrapper > div {
-  background: red;
+  padding: 6rem 1rem;
 }
 
 .left {
+  padding-left: 1rem;
   grid-column-start: 1;
   grid-column-end: 7;
 }
@@ -42,25 +38,25 @@
 
 @include breakpoint-down("md") {
   .wrapper {
-    padding: 3rem 0;
+    padding: 3rem 1rem;
   }
 
-  .left,
+  .left {
+    display: none;
+  }
+
   .right {
+    margin-top: 0;
     grid-column-start: 1;
     grid-column-end: -1;
   }
 
   .heading {
-    @include type-style("heading-03");
+    font-size: 24px;
   }
 
   .body,
   .body a {
     @include type-style("body-02");
-  }
-
-  .right {
-    margin-top: 2rem;
   }
 }

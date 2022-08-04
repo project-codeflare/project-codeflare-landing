@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <meta name="description" content="CodeFlare by IBM Research" />
         <meta
           name="description"
-          content="Let your AI and ML teams to innovate where it matters. We‘ll handle the rest."
+          content="Let your AI and ML teams innovate where it matters. We‘ll handle the rest."
         />
 
         {/* <!-- Facebook Meta Tags --> */}
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="IBM Research | CodeFlare" />
         <meta
           property="og:description"
-          content="Let your AI and ML teams to innovate where it matters. We‘ll handle the rest."
+          content="Let your AI and ML teams innovate where it matters. We‘ll handle the rest."
         />
         <meta property="og:image" content="https://i.imgur.com/keyAdnw.png" />
 
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <meta name="twitter:title" content="IBM Research | CodeFlare" />
         <meta
           name="twitter:description"
-          content="Let your AI and ML teams to innovate where it matters. We‘ll handle the rest."
+          content="Let your AI and ML teams innovate where it matters. We‘ll handle the rest."
         />
         <meta
           name="twitter:image"

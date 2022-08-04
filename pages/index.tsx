@@ -12,7 +12,7 @@ import LearnMore, { LearnMoreCard } from "components/LearnMore";
 import heroImage from "media/hero.jpg";
 import videoSrc from "media/codeflare.mp4";
 
-import screenshots from "media/screenshots.png";
+import screenshots from "media/screenshots.webp";
 
 const Home: NextPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);

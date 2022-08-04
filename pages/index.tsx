@@ -9,8 +9,7 @@ import Lightbox from "components/Lightbox";
 import { TwoColumn, TwoColumnFeature } from "components/TwoColumn";
 import LearnMore, { LearnMoreCard } from "components/LearnMore";
 
-import heroImage from "media/hero.png";
-import videoPoster from "media/poster.jpg";
+import heroImage from "media/hero.jpg";
 import videoSrc from "media/codeflare.mp4";
 
 import screenshots from "media/screenshots.png";
@@ -30,7 +29,6 @@ const Home: NextPage = () => {
           onEnded={() => setLightboxOpen(false)}
           preload="auto"
           playsInline
-          poster={videoPoster.src}
           controls
         >
           <source src={videoSrc} type="video/mp4" />

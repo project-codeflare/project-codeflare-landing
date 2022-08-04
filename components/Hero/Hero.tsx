@@ -41,7 +41,7 @@ const Hero = ({
               <Video width="24" height="24" className={styles.arrow} />
             </button>
             <a className={cx(styles.action, styles.primary)}>
-              <span className={styles.heading}>Try Codeflare</span>
+              <span className={styles.heading}>Try CodeFlare</span>
 
               <ArrowRight width="24" height="24" className={styles.arrow} />
             </a>

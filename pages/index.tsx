@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import Head from "next/head";
 import { Innovate, Spaceship, Streamline } from "@carbon/pictograms-react";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
 
 import Hero from "components/Hero";
 import Callout, { CalloutBody, CalloutHeading } from "components/Callout";
@@ -56,6 +57,7 @@ const Home: NextPage = () => {
         <video
           onEnded={() => setLightboxOpen(false)}
           preload="auto"
+          autoPlay
           playsInline
           controls
         >
@@ -127,15 +129,13 @@ const Home: NextPage = () => {
         </LearnMoreCard>
       </LearnMore>
       <Callout background="#393939" leftText="Try CodeFlare">
-        <CalloutHeading>
-          Sign up to be considered for our beta trial.
-        </CalloutHeading>
+        <CalloutHeading>Apply for our beta program</CalloutHeading>
         <CalloutBody>
           If you are selected, you receive access to our researcher expertise,
           access to hosted CodeFlare with free GPU time, and several examples to
           get you started.
           <br />
-          <a href="research.ibm.com">Sign up →</a>
+          <a href="research.ibm.com">Apply →</a>
         </CalloutBody>
       </Callout>
     </>

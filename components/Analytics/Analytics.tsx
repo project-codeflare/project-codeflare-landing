@@ -6,7 +6,7 @@ const Analytics = () => {
       strategy="afterInteractive"
       id="plausible"
       data-domain="codeflare.dev"
-      src="https://plausible.io/js/plausible.js"
+      src="https://plausible.io/js/script.outbound-links.js"
     />
   );
 };

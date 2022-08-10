@@ -20,7 +20,7 @@ export const LearnMoreCard = ({
   href: string;
 }) => {
   return (
-    <a href={href || "research.ibm.com"} className={styles.card}>
+    <a href={href || "https://research.ibm.com"} className={styles.card}>
       {children}
       <ArrowRight height="20" width="20" className={styles.icon} />
     </a>

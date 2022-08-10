@@ -91,7 +91,7 @@ const Home: NextPage = () => {
           hundreds of model adaptation pipelines and automate these tasks
           whenever they need to make any changes.
           <br />
-          <a href="research.ibm.com">Request a demo →</a>
+          <a href="https://research.ibm.com">Request a demo →</a>
         </CalloutBody>
       </Callout>
       <LearnMore>
@@ -135,7 +135,7 @@ const Home: NextPage = () => {
           access to hosted CodeFlare with free GPU time, and several examples to
           get you started.
           <br />
-          <a href="research.ibm.com">Apply →</a>
+          <a href="https://research.ibm.com">Apply →</a>
         </CalloutBody>
       </Callout>
     </>

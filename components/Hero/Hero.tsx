@@ -40,7 +40,10 @@ const Hero = ({
               <span className={styles.heading}>Watch the demo</span>
               <Video width="24" height="24" className={styles.arrow} />
             </button>
-            <a className={cx(styles.action, styles.primary)}>
+            <a
+              href="https://research.ibm.com"
+              className={cx(styles.action, styles.primary)}
+            >
               <span className={styles.heading}>Try CodeFlare</span>
 
               <ArrowRight width="24" height="24" className={styles.arrow} />

@@ -5,7 +5,4 @@
 
 # Deploy
 
-1. Run `npm run build`
-1. Run `npm run export`
-1. Commit the changes
-1. Push to the `main` branch
+`npm run deploy`

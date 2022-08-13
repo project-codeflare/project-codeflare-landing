@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export -o docs"
+    "export": "next export -o docs",
+    "deploy": "./deploy.sh"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.6.0",

@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { useState } from "react";
 import Head from "next/head";
 import { Innovate, Spaceship, Streamline } from "@carbon/pictograms-react";
-import LiteYouTubeEmbed from "react-lite-youtube-embed";
+// import LiteYouTubeEmbed from "react-lite-youtube-embed";
 
 import Hero from "components/Hero";
 import Callout, { CalloutBody, CalloutHeading } from "components/Callout";
@@ -67,75 +67,82 @@ const Home: NextPage = () => {
       <TwoColumn
         imageSrc={screenshots}
         imageAlt="CodeFlare dashboard screenshot"
-        heading="Empower your AI and ML teams to innovate where it matters. We‘ll
-    handle the rest."
+        heading="Let your AI/ML teams focus on innovation. CodeFlare handles the infrastructure."
       >
         <TwoColumnFeature icon={Streamline}>
-          Minimize the effort and skills needed to scale your AI and ML
+          CodeFlare is an open-source, cloud-native platform for next generation
+          AI and ML development
         </TwoColumnFeature>
         <TwoColumnFeature icon={Innovate}>
-          Access the latest innovations and experience in running data science
-          platforms
+          Minimize the effort and skills needed to scale your AI and ML
         </TwoColumnFeature>
         <TwoColumnFeature icon={Spaceship}>
-          Run your workloads anywhere.
+          CodeFlare is built on OpenShift: deploy anywhere, from on-prem to
+          cloud, and integrate easily with other cloud-native ecosystems.
         </TwoColumnFeature>
       </TwoColumn>
       <Callout leftText="Use case">
         <CalloutHeading>
-          IBM’s CodeFlare significantly cuts the time to automate transfer
-          learning tasks for foundation models.
+          Highlight: Foundation models with CodeFlare
         </CalloutHeading>
         <CalloutBody>
-          With just a few lines of code, a data scientist can operationalize
-          hundreds of model adaptation pipelines and automate these tasks
-          whenever they need to make any changes.
-          <br />
-          <a href="https://research.ibm.com">Request a demo →</a>
+          <p>
+            CodeFlare accelerates the automation of transfer learning tasks for
+            foundation models. Today, businesses can use it to fully automate
+            their foundation model pipelines. And with the benefits of hybrid
+            cloud, your data never has to leave a secure environment.
+          </p>
+          <a href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/mail/us-en/CodeFlare/">
+            Learn more →
+          </a>
         </CalloutBody>
       </Callout>
       <LearnMore>
         <LearnMoreCard href="https://research.ibm.com/blog/codeflare-ml-experiments">
-          CodeFlare drastically reduces time to set up, run, and scale
-          machine-learning tests
+          An Introduction to CodeFlare
         </LearnMoreCard>
         <LearnMoreCard href="https://research.ibm.com/blog/codeflare-for-foundation-models">
-          IBM’s CodeFlare significantly cuts the time to automate transfer
-          learning tasks for foundation models
+          Update: CodeFlare is now refined for foundation models
         </LearnMoreCard>
         <LearnMoreCard href="https://research.ibm.com/blog/what-are-foundation-models">
           What are foundation models?
         </LearnMoreCard>
         <LearnMoreCard href="https://medium.com/codeflare/aix360-meets-codeflare-how-to-scale-explainability-using-codeflare-pipelines-c6bd8a7b0090">
-          AIX360 meets CodeFlare: How to scale explainability using CodeFlare
-          pipelines
+          CodeFlare Example: Scaling Explainable AI
         </LearnMoreCard>
         <LearnMoreCard href="https://medium.com/codeflare/tuning-hyper-parameters-with-codeflare-pipelines-13b884c8336f">
-          Tuning hyper-parameters with CodeFlare Pipelines
+          CodeFlare Example: Tuning hyper-parameters
         </LearnMoreCard>
         <LearnMoreCard href="https://medium.com/codeflare/fit-and-score-multiple-classifiers-with-codeflare-pipeline-6e58fa5b2c52">
-          Fit and score multiple classifiers with CodeFlare Pipeline
+          CodeFlare Example: Fitting and scoring multiple classifiers
         </LearnMoreCard>
         <LearnMoreCard href="https://www.youtube.com/watch?v=L7ZmnFV8fzc&feature=emb_title">
-          Ray Summit 2021 — Scaling and Unifying SciKit Learn and Spark
-          Pipelines using Ray
+          From Ray Summit &apos;21: Scaling and Unifying SciKit Learn and Spark
+          Pipelines with Ray
         </LearnMoreCard>
         <LearnMoreCard href="https://www.youtube.com/watch?v=nox9R0dK0E8&feature=emb_title">
-          Ray Summit 2021 — Anomaly Detection on Remote Sensing with Ray +
-          Horovod
+          From Ray Summit &apos;21: Anomaly Detection on Remote Sensing with Ray
+          + Horovod
         </LearnMoreCard>
         <LearnMoreCard href="https://www.youtube.com/watch?v=0SRk5lfaYYE">
-          Ray Summit 2021 — Powering open data hub with Ray
+          From Ray Summit &apos;21: Powering Open Data Hub with Ray
         </LearnMoreCard>
       </LearnMore>
       <Callout background="#393939" leftText="Try CodeFlare">
-        <CalloutHeading>Apply for our beta program</CalloutHeading>
+        <CalloutHeading>
+          Curious? Request a demo, or sign up to be considered for our beta
+          trial
+        </CalloutHeading>
         <CalloutBody>
-          If you are selected, you receive access to our researcher expertise,
-          access to hosted CodeFlare with free GPU time, and several examples to
-          get you started.
-          <br />
-          <a href="https://research.ibm.com">Apply →</a>
+          <p>If selected, you’ll get access to:</p>
+          <ul>
+            <li>CodeFlare, with free GPU time</li>
+            <li>the research team that worked on CodeFlare</li>
+            <li>coding examples to help you get started</li>
+          </ul>
+          <a href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/mail/us-en/CodeFlare/">
+            Apply →
+          </a>
         </CalloutBody>
       </Callout>
     </>

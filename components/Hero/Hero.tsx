@@ -29,19 +29,19 @@ const Hero = ({
         </div>
         <div className={styles.cta}>
           <p className={styles.pitch}>
-            Seamlessly set up, run, and scale your AI and ML from your laptop to
-            the cloud.
+            Machine Learning. Distributed and Serverless. Build, scale, and
+            unify entire pipelines. Effortlessly.
           </p>
           <div className={styles.actions}>
             <button
               onClick={() => setLightboxOpen(true)}
               className={styles.action}
             >
-              <span className={styles.heading}>Watch the demo</span>
+              <span className={styles.heading}>Watch a demo</span>
               <Video width="24" height="24" className={styles.arrow} />
             </button>
             <a
-              href="https://research.ibm.com"
+              href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/mail/us-en/CodeFlare/"
               className={cx(styles.action, styles.primary)}
             >
               <span className={styles.heading}>Try CodeFlare</span>

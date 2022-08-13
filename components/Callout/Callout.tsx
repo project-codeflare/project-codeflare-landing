@@ -1,4 +1,4 @@
-import { Grid, Column } from "components/Grid";
+import { Grid } from "components/Grid";
 import { ReactNode } from "react";
 import styles from "./Callout.module.scss";
 
@@ -31,7 +31,7 @@ export const CalloutHeading = ({ children }: { children: ReactNode }) => {
 };
 
 export const CalloutBody = ({ children }: { children: ReactNode }) => {
-  return <p className={styles.body}>{children}</p>;
+  return <div className={styles.body}>{children}</div>;
 };
 
 export default Callout;

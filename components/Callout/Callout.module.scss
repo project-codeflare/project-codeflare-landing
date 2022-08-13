@@ -1,8 +1,3 @@
-// @use "@carbon/react/scss/spacing" as *;
-// @use "@carbon/react/scss/breakpoint" as *;
-// @use "@carbon/react/scss/themes" as *;
-// @use "@carbon/react/scss/theme" as * with($theme: $g90);
-// @use "@carbon/type";
 @use "styles/variables" as *;
 
 .wrapper {
@@ -18,22 +13,37 @@
   grid-column-start: 7;
   grid-column-end: -1;
 }
+
 .heading {
   @include type-style("heading-04");
   font-weight: bold;
 }
 
-.body {
+.body * {
   @include type-style("heading-04");
+}
+
+.body p {
   margin-top: 1em;
   font-weight: 300;
 }
 
 .body a {
   display: block;
-  margin-top: 2rem;
+  margin-top: 3rem;
   text-decoration: underline;
-  @include type-style("heading-03");
+}
+
+.body ul {
+  list-style: disc inside;
+
+  li {
+    margin-left: $spacing-06;
+  }
+
+  li:first-of-type {
+    margin-top: $spacing-05;
+  }
 }
 
 @include breakpoint-down("md") {

@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import Head from "next/head";
 import { Innovate, Spaceship, Streamline } from "@carbon/pictograms-react";
 // import LiteYouTubeEmbed from "react-lite-youtube-embed";
 
 import Hero from "components/Hero";
+import Head from "components/Head";
 import Callout, { CalloutBody, CalloutHeading } from "components/Callout";
 import Lightbox from "components/Lightbox";
 import { TwoColumn, TwoColumnFeature } from "components/TwoColumn";
@@ -19,43 +19,16 @@ const Home: NextPage = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   return (
     <>
-      <Head>
-        <title>IBM Research | CodeFlare</title>
-        <meta name="description" content="CodeFlare by IBM Research" />
-        <meta
-          name="description"
-          content="Let your AI and ML teams innovate where it matters. We‘ll handle the rest."
-        />
-
-        {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://codeflare.dev" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="IBM Research | CodeFlare" />
-        <meta
-          property="og:description"
-          content="Let your AI and ML teams innovate where it matters. We‘ll handle the rest."
-        />
-        <meta property="og:image" content="https://i.imgur.com/keyAdnw.png" />
-
-        {/* <!-- Twitter Meta Tags --> */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="codeflare.dev" />
-        <meta property="twitter:url" content="https://codeflare.dev" />
-        <meta name="twitter:title" content="IBM Research | CodeFlare" />
-        <meta
-          name="twitter:description"
-          content="Let your AI and ML teams innovate where it matters. We‘ll handle the rest."
-        />
-        <meta
-          name="twitter:image"
-          content="https://i.imgur.com/keyAdnw.png"
-        ></meta>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Head />
       <Hero setLightboxOpen={setLightboxOpen} src={heroImage} />
       <Lightbox open={lightboxOpen} setOpen={setLightboxOpen}>
         <video
           onEnded={() => setLightboxOpen(false)}
+          onPlay={() => {
+            if ((window as any).plausible) {
+              (window as any).plausible("Video played");
+            }
+          }}
           preload="auto"
           autoPlay
           playsInline

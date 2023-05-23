@@ -65,7 +65,7 @@ const Home: NextPage = () => {
             their foundation model pipelines. And with the benefits of hybrid
             cloud, your data never has to leave a secure environment.
           </p>
-          <a href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/mail/us-en/CodeFlare/">
+          <a href="https://research.ibm.com/blog/openshift-foundation-model-stack">
             Learn more →
           </a>
         </CalloutBody>
@@ -103,18 +103,11 @@ const Home: NextPage = () => {
       </LearnMore>
       <Callout background="#393939" leftText="Try CodeFlare">
         <CalloutHeading>
-          Curious? Request a demo, or sign up to be considered for our beta
-          trial
+          CodeFlare is deployed as part of and integrated with the Open Data Hub.
         </CalloutHeading>
         <CalloutBody>
-          <p>If selected, you’ll get access to:</p>
-          <ul>
-            <li>CodeFlare, with free GPU time</li>
-            <li>the research team that worked on CodeFlare</li>
-            <li>coding examples to help you get started</li>
-          </ul>
-          <a href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/mail/us-en/CodeFlare/">
-            Apply →
+          <a href="https://github.com/opendatahub-io/distributed-workloads">
+            Try →
           </a>
         </CalloutBody>
       </Callout>

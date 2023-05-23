@@ -41,7 +41,7 @@ const Hero = ({
               <Video width="24" height="24" className={styles.arrow} />
             </button>
             <a
-              href="https://www.ibm.com/it-infrastructure/us-en/resources/campaignmail/mail/us-en/CodeFlare/"
+              href="https://github.com/project-codeflare/codeflare"
               className={cx(styles.action, styles.primary)}
             >
               <span className={styles.heading}>Try CodeFlare</span>

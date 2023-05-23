@@ -2,7 +2,7 @@ import { ReactNode, ElementType, Children } from "react";
 
 import styles from "./TwoColumn.module.scss";
 import { Grid } from "components/Grid";
-import Image, { StaticImageData } from "next/future/image";
+import Image, { StaticImageData } from "next/image";
 import screen from "media/screen.png";
 
 export const TwoColumnFeature = ({

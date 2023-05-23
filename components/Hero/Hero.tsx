@@ -1,5 +1,5 @@
 import styles from "./Hero.module.scss";
-import Image from "next/future/image";
+import Image from "next/image";
 import { ArrowRight, Video } from "@carbon/icons-react";
 import { Grid } from "components/Grid";
 import { StaticImageData } from "next/image";

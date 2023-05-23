@@ -4,7 +4,9 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  experimental: { images: { allowFutureImage: true, unoptimized: true } },
+  images: {
+    unoptimized: true,
+  },
   webpack: (config, options) => {
     const { isServer } = options;
     config.module.rules.push({
